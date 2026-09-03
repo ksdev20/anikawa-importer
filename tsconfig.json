@@ -1,5 +1,41 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+
+  "include": [
+    ".astro/types.d.ts",
+    "**/*"
+  ],
+
+  "exclude": [
+    "dist",
+    "node_modules",
+    ".vercel"
+  ],
+
+  "compilerOptions": {
+    "baseUrl": ".",
+
+    "paths": {
+      "@/*": ["src/*"],
+      "@/components/*": ["src/components/*"],
+      "@/features/*": ["src/features/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/services/*": ["src/services/*"],
+      "@/types/*": ["src/types/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@tw-config": ["./tailwind.config.mjs"]
+    },
+
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "ignoreDeprecations": "6.0"
+  }
 }
