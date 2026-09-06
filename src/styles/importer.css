@@ -270,3 +270,393 @@
     @apply flex-1;
   }
 }
+
+/* Review */
+
+.import-review {
+  @apply mt-8 flex flex-col gap-6;
+}
+
+.import-review-header {
+  @apply flex flex-col gap-6 rounded-panel border border-border bg-surface/90 p-6 shadow-panel backdrop-blur sm:flex-row sm:items-end sm:justify-between sm:p-8;
+}
+
+.import-back-button {
+  @apply mb-5 inline-flex items-center gap-2 rounded-control px-3 py-2 text-sm font-medium text-muted transition-colors hover:bg-surfaceLight hover:text-white;
+}
+
+.import-review-title {
+  @apply text-3xl font-bold tracking-tight text-white sm:text-4xl;
+}
+
+.import-review-stat {
+  @apply flex h-16 min-w-28 flex-col items-center justify-center rounded-control border border-primary/20 bg-primary/10 px-5;
+}
+
+.import-review-stat strong {
+  @apply text-xl font-bold text-white;
+}
+
+.import-review-stat span {
+  @apply text-xs text-muted;
+}
+
+.import-review-grid {
+  @apply grid gap-6 lg:grid-cols-[260px_minmax(0,1fr)];
+}
+
+.import-review-media,
+.import-review-main {
+  @apply flex min-w-0 flex-col gap-5;
+}
+
+.import-media-card {
+  @apply overflow-hidden rounded-panel border border-border bg-surface shadow-panel;
+  aspect-ratio: 2 / 3;
+}
+
+.import-poster {
+  @apply h-full w-full object-cover;
+}
+
+.import-media-placeholder {
+  @apply flex h-full w-full flex-col items-center justify-center gap-3 bg-secondarySoft text-muted;
+}
+
+.import-media-placeholder span {
+  @apply text-sm;
+}
+
+.import-backdrop-card {
+  @apply overflow-hidden rounded-panel border border-border bg-surface;
+  aspect-ratio: 16 / 8;
+}
+
+.import-backdrop {
+  @apply h-full w-full object-cover;
+}
+
+.import-section {
+  @apply rounded-panel border border-border bg-surface/90 p-5 shadow-panel backdrop-blur sm:p-7;
+}
+
+.import-section-heading {
+  @apply mb-6;
+}
+
+.import-section-heading-row {
+  @apply flex items-center justify-between gap-4;
+}
+
+.import-section-heading span {
+  @apply text-xs font-bold tracking-[0.2em] text-accent;
+}
+
+.import-section-heading h3 {
+  @apply mt-1 text-xl font-semibold text-white;
+}
+
+.import-fields-grid {
+  @apply grid gap-4 sm:grid-cols-2;
+}
+
+.import-field-full {
+  @apply sm:col-span-2;
+}
+
+.import-field-label {
+  @apply flex min-w-0 flex-col gap-2 text-xs font-semibold text-muted;
+}
+
+.import-input,
+.import-textarea {
+  @apply w-full rounded-control border border-border bg-secondarySoft px-3.5 py-3 text-sm font-normal text-white outline-none transition-all duration-200 placeholder:text-muted;
+}
+
+.import-input:focus,
+.import-textarea:focus {
+  @apply border-primary shadow-glow-sm;
+}
+
+.import-input-large {
+  @apply text-base font-medium;
+}
+
+.import-textarea {
+  @apply leading-6;
+}
+
+.import-source-summary {
+  @apply flex flex-col gap-2;
+}
+
+.import-source-summary-item {
+  @apply flex min-w-0 items-center gap-3 rounded-control border border-border bg-secondarySoft px-4 py-3 text-sm;
+}
+
+.import-source-summary-item svg {
+  @apply shrink-0 text-primary;
+}
+
+.import-source-summary-item strong {
+  @apply shrink-0 text-white;
+}
+
+.import-source-summary-item span {
+  @apply min-w-0 truncate text-muted;
+}
+
+.import-secondary-button,
+.import-small-button {
+  @apply inline-flex items-center justify-center gap-2 rounded-control border border-border bg-secondarySoft px-3 py-2 text-sm font-medium text-white transition-all duration-200 hover:border-primary/40 hover:bg-surfaceLight;
+}
+
+.import-small-button {
+  @apply px-2.5 py-2 text-xs;
+}
+
+.import-small-danger {
+  @apply inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-control border border-border bg-secondarySoft text-muted transition-all duration-200 hover:border-red-500/40 hover:bg-red-500/10 hover:text-red-400;
+}
+
+.import-seasons {
+  @apply flex flex-col gap-3;
+}
+
+.import-season {
+  @apply overflow-hidden rounded-panel border border-border bg-secondarySoft;
+}
+
+.import-season-header {
+  @apply flex items-center justify-between gap-3 border-b border-border px-4 py-3;
+}
+
+.import-season-toggle {
+  @apply flex min-w-0 items-center gap-2 text-left text-sm font-semibold text-white;
+}
+
+.import-season-toggle small {
+  @apply ml-1 font-normal text-muted;
+}
+
+.import-season-toggle svg {
+  @apply shrink-0 text-muted transition-transform duration-200;
+}
+
+.import-season-arrow-open {
+  transform: rotate(90deg);
+}
+
+.import-season-actions {
+  @apply flex shrink-0 items-center gap-2;
+}
+
+.import-season-body {
+  @apply flex flex-col gap-5 p-4;
+}
+
+.import-season-meta {
+  @apply grid gap-4 sm:grid-cols-2;
+}
+
+.import-episode-list {
+  @apply flex flex-col gap-3;
+}
+
+.import-episode {
+  @apply grid gap-3 rounded-control border border-border bg-surface p-3 sm:grid-cols-[36px_minmax(0,1fr)_36px];
+}
+
+.import-episode-number {
+  @apply flex h-9 w-9 items-center justify-center rounded-full bg-primary/15 text-sm font-bold text-accent;
+}
+
+.import-episode-fields {
+  @apply grid min-w-0 gap-4 sm:grid-cols-2;
+}
+
+.import-empty-state {
+  @apply flex items-start gap-3 rounded-control border border-yellow-500/20 bg-yellow-500/10 p-4 text-yellow-200;
+}
+
+.import-empty-state svg {
+  @apply mt-0.5 shrink-0;
+}
+
+.import-empty-state strong {
+  @apply text-sm font-semibold;
+}
+
+.import-empty-state p {
+  @apply mt-1 text-sm leading-6 text-yellow-200/70;
+}
+
+.import-review-footer {
+  @apply flex flex-col items-stretch justify-between gap-3 rounded-panel border border-border bg-surface/90 p-5 shadow-panel backdrop-blur sm:flex-row sm:items-center;
+}
+
+.import-review-footer .import-back-button {
+  @apply mb-0;
+}
+
+.import-continue-button {
+  @apply inline-flex items-center justify-center gap-3 rounded-control bg-primary px-5 py-3 text-sm font-semibold text-white shadow-glow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent;
+}
+
+@media (max-width: 639px) {
+  .import-review {
+    @apply mt-5;
+  }
+
+  .import-review-header {
+    @apply p-4;
+  }
+
+  .import-review-title {
+    @apply text-2xl;
+  }
+
+  .import-section {
+    @apply p-4;
+  }
+
+  .import-section-heading-row {
+    @apply items-start;
+  }
+
+  .import-season-header {
+    @apply items-start;
+  }
+
+  .import-season-actions {
+    @apply flex-col;
+  }
+
+  .import-episode {
+    @apply grid-cols-[36px_minmax(0,1fr)_36px];
+  }
+
+  .import-review-footer {
+    @apply p-4;
+  }
+
+  .import-continue-button {
+    @apply w-full;
+  }
+}
+
+.import-ai {
+  @apply mt-8 flex flex-col gap-6;
+}
+
+.import-ai-header {
+  @apply flex flex-col gap-6 rounded-panel border border-border bg-surface/90 p-6 shadow-panel backdrop-blur sm:p-8 lg:flex-row lg:items-end lg:justify-between;
+}
+
+.import-ai-badge {
+  @apply mb-3 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1.5 text-xs font-bold tracking-[0.15em] text-accent;
+}
+
+.import-ai-grid {
+  @apply grid gap-6 lg:grid-cols-2;
+}
+
+.import-ai-feature-list {
+  @apply flex flex-col gap-3;
+}
+
+.import-ai-feature {
+  @apply flex gap-4 rounded-control border border-border bg-secondarySoft p-4;
+}
+
+.import-ai-feature-icon {
+  @apply flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-accent;
+}
+
+.import-ai-feature strong {
+  @apply text-sm font-semibold text-white;
+}
+
+.import-ai-feature p {
+  @apply mt-1 text-sm leading-6 text-muted;
+}
+
+.import-ai-protected {
+  @apply grid gap-3;
+}
+
+.import-ai-protected div {
+  @apply flex items-center gap-3 rounded-control border border-border bg-secondarySoft px-4 py-3 text-sm text-white;
+}
+
+.import-ai-protected svg {
+  @apply shrink-0 text-green-400;
+}
+
+.import-ai-loading {
+  @apply flex min-h-80 flex-col items-center justify-center text-center;
+}
+
+.import-ai-loading-icon {
+  @apply mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-accent;
+}
+
+.import-ai-loading h2 {
+  @apply text-xl font-semibold text-white;
+}
+
+.import-ai-loading > p {
+  @apply mt-2 max-w-md text-sm leading-6 text-muted;
+}
+
+.import-ai-progress {
+  @apply mt-6 h-2 w-full max-w-md overflow-hidden rounded-full bg-secondarySoft;
+}
+
+.import-ai-progress-bar {
+  @apply h-full w-2/3 animate-pulse rounded-full bg-primary;
+}
+
+.import-ai-loading-status {
+  @apply mt-4 flex items-center gap-2 text-xs text-muted;
+}
+
+.import-ai-results {
+  @apply flex flex-col gap-3;
+}
+
+.import-ai-result {
+  @apply rounded-control border border-border bg-secondarySoft p-4;
+}
+
+.import-ai-result-header {
+  @apply flex items-start justify-between gap-4;
+}
+
+.import-ai-result-header > div {
+  @apply min-w-0;
+}
+
+.import-ai-result-header span {
+  @apply block text-xs font-semibold tracking-wide text-muted;
+}
+
+.import-ai-result-header strong {
+  @apply mt-1 block text-sm font-semibold text-white;
+}
+
+.import-ai-result-header > svg {
+  @apply shrink-0 text-green-400;
+}
+
+.import-ai-result > p {
+  @apply mt-4 border-t border-border pt-4 text-sm leading-6 text-muted;
+}
+
+.import-ai-result-count {
+  @apply rounded-full bg-primary/10 px-3 py-1.5 text-xs font-semibold text-accent;
+}
+
+.import-ai-footer-actions {
+  @apply flex flex-col gap-3 sm:flex-row;
+}
